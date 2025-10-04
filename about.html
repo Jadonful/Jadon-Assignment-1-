@@ -1,0 +1,66 @@
+<!--HTML5 doctype declaration-->
+<!DOCTYPE html>
+<!--All page content is inside the HTML element-->
+<html lang="en">
+  <!--Head element content is not visible in a browser window except title tag-->
+<head>
+  <meta charset="UTF-8"> <!-- Gives access to all the characters we need-->
+  <title>Jadon's Peronal Portfilo-ABOUT ME</title>  <!-- This sets the title that appears in the browser tab -->
+  <meta name="viewport" content="width=device-width"> <!-- Makes the page responsive to screen size -->
+   <!-- Links external CSS files for different screen sizes -->
+  <link href="laptop.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 1025px)">
+  <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 601px) and (max-width: 1024px)">
+  <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)">
+  
+   
+</head>
+
+<!-- Everything that shown on the webpage is stored in the body -->
+<body>
+  
+  <header> <!-- This is header for the top of the page that will also have my navigation  menu, thhis applies to all pages-->
+    <div class="name-icon">J</div> <!-- This is for my logo icon -->
+    <nav> <!-- This tag is for my Navigation menu -->
+      <ul> <!-- Unordered list of links that links each page to another -->
+         <!-- active class selects the navigation bar-->
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html" class="active">ABOUT ME</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- About Me Section -->
+  <section class="about">
+    <div class="about-left">
+      
+    <!-- This is my video controls -->
+   
+      <video controls autoplay
+     muted
+      loop>
+        <source src="IMG_0105.mp4" type="video/mp4">
+        <source src="on_record.ogv" type="video/ogv">
+        
+      </video>
+    </div>
+
+    <div class="about-right">
+      <h1>ABOUT ME</h1>
+      <h3>JADON FULLER</h3>
+     
+    </div>
+
+    <!-- Profile Photo Circle and picture goes in the frame -->
+    <div class="profile-photo">
+      <img src="photo.png" alt="Profile Photo">
+    </div>
+  </section>
+
+  <!-- This is my Footer -->
+  <footer>
+    <p>© 2025 Jadon Fuller. All Rights Reserved</p>
+  </footer>
+</body>
+</html>

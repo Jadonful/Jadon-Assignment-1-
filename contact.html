@@ -1,0 +1,58 @@
+<!--HTML5 doctype declaration-->
+<!DOCTYPE html>
+<!--All page content is inside the HTML element-->
+<html lang="en">
+  <!--Head element content is not visible in a browser window except title tag-->
+<head>
+  <meta charset="UTF-8"> <!-- Gives access to all the characters we need-->
+  <title>Jadon's Peronal Portfilo-CONTACT</title>  <!-- This sets the title that appears in the browser tab -->
+  <meta name="viewport" content="width=device-width"> <!-- Makes the page responsive to screen size -->
+   <!-- Links external CSS files for different screen sizes -->
+  <link href="laptop.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 1025px)">
+  <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 601px) and (max-width: 1024px)">
+  <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)">
+  
+   
+</head>
+
+<!-- Everything that shown on the webpage is stored in the body -->
+<body>
+  
+  <header> <!-- This is header for the top of the page that will also have my navigation  menu, thhis applies to all pages-->
+    <div class="name-icon">J</div> <!-- This is for my logo icon -->
+    <nav> <!-- This tag is for my Navigation menu -->
+      <ul> <!-- Unordered list of links that links each page to another -->
+         <!-- active class selects the navigation bar-->
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html" class="active">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<!-- This section is for my form -->
+  <section class="contact-section">
+  <h1>Send me your questions, comments and project related queries</h1>
+
+  <form class="contact-form">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <label for="message">Message</label>
+    <textarea id="message" placeholder="Question, comment, or query."></textarea>
+
+    <label for="captcha">*What is 2+2? (So I know you aren’t a robot)</label>
+    <input type="text" id="captcha" placeholder="Your answer">
+
+    <button type="submit" class="submit-btn">SUBMIT</button>
+  </form>
+</section>
+<!-- This is my footer for contact page -->
+<footer class="footer">
+  © 2025 Jadon Fuller. All Rights Reserved
+</footer>

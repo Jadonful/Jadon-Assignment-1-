@@ -1,0 +1,91 @@
+<!--HTML5 doctype declaration-->
+<!DOCTYPE html>
+<!--All page content is inside the HTML element-->
+<html lang="en">
+  <!--Head element content is not visible in a browser window except title tag-->
+<head>
+  <meta charset="UTF-8"> <!-- Gives access to all the characters we need-->
+  <title>Jadon's Peronal Portfilo-PROJECTS</title>  <!-- This sets the title that appears in the browser tab -->
+  <meta name="viewport" content="width=device-width"> <!-- Makes the page responsive to screen size -->
+   <!-- Links external CSS files for different screen sizes -->
+  <link href="laptop.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 1025px)">
+  <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 601px) and (max-width: 1024px)">
+  <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)">
+  
+   
+</head>
+
+<!-- Everything that shown on the webpage is stored in the body -->
+<body>
+  
+  <header> <!-- This is header for the top of the page that will also have my navigation  menu, thhis applies to all pages-->
+    <div class="name-icon">J</div> <!-- This is for my logo icon -->
+    <nav> <!-- This tag is for my Navigation menu -->
+      <ul> <!-- Unordered list of links that links each page to another -->
+         <!-- active class selects the navigation bar-->
+        
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="projects.html" class="active">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- This is my project description section for my projects-->
+
+  <section class="projects-section">
+  <div class="project-card">
+    <h2>SPACE SUMMER CAMP</h2>
+    <p> After my first year in university; That very summer I was
+        apart of the tech for good project. This project consist
+        of about 20 students from the Information techology program. 
+        Their were many different projects to choose from but our group
+        decided to focus on space research. This resarch was specifically on 
+        satellite communication and we were also able to capture our own
+        satellite images using RTL-SDR technology. At the end we were able to share 
+        our research with highschool students.
+
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h2>IMPORTANCE OF UX-UI DESIGN</h2>
+    <p>In my first year of university I had class called Writing and Critical Thinking.
+        This class consist of learning to write business emails and basic professional writing.
+        We did a project on what career we see ourselves in a chose UX-UI design because 
+        I always enounter seniors with the common problem of not being able to use certain applications
+        ont their phone because it's not straight forward to use. This is why I did my project on
+        the career of UX-UI design.
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h2>DANGERS OF USING PUBLIC-WIFI</h2>
+    <p>In my second of university I wrote a paper 
+        about the dangers of using public Wi-Fi in places like coffee shops or airports.
+         It explained how hackers can steal personal information through attacks such as spying,
+          fake Wi-Fi, and malware. A real example showed how weak passwords led to a major security breach.
+           The project also talked about tools like Wireshark to test networks safely. In the end, it focused on ways to stay safe,
+            like using encryption, strong passwords, and being careful online
+
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h2>TECHNIQUES FOR IMPROVING CACHE UTILIZATION</h2>
+    <p> In my second year of university I wrote a paper called Techniques For Improving Cache Utilization.
+         The paper explains how cache memory helps computers work faster by storing important data closer to the CPU. 
+         It looks at different ways to make cache more efficient, like hardware support, cache hints, cache replacement policies,
+          and cache bypassing. These methods can speed up computers, save energy, and make systems run smoother, but they also have
+           drawbacks like higher cost and complexity. Overall, the research shows that
+         improving cache use is important for better computer performance and should continue to be studied in the future.</p>
+  </div>
+</section>
+
+<!--This is my footer-->
+
+<footer class="footer">
+  © 2025 Jadon Fuller. All Rights Reserved
+</footer>
+</html>

@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* let body fill full screen */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7c600;
+  min-height: 100vh; /* at least full height */
+  position: relative; /* allows absolute footer placement */
+  padding-bottom: 60px; /* space for footer height */
+}
+
+/* This is the Header */
+header {
+  background: black;
+  padding: 10px 40px;
+  overflow: hidden; /* clear floats */
+}
+
+.name-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: yellow;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  text-align: center;
+  line-height: 35px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  background: white;
+  color: orange;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+/* Home Page */
+.intro {
+  background: #f7c600;
+  padding: 50px;
+  overflow: hidden; /* clear floats */
+}
+
+.intro-left {
+  float: left;
+  width: 40%;
+}
+
+.intro-left h3 {
+  font-size: 30px;
+  font-style: italic;
+  margin-top: 200px;
+}
+
+.intro-left h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.intro-right {
+  float: right;
+  width: 45%;
+  text-align: right;
+}
+
+.intro-right img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+/* About Page */
+.about {
+  background: #f7c600;
+  padding: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Left video */
+.about-left {
+  float: left;
+  width: 40%;
+}
+
+.about-left video {
+  width: 100%;
+  max-width: 400px;
+  height: 600px;   /* 👈 sets how tall the video box is */
+  border-radius: 10px;
+  background: #333;
+  object-fit: cover; /* makes sure the video fills the box nicely */
+}
+
+/* Right text */
+.about-right {
+  float: left;
+  width: 50%;
+  margin-left: 40px;
+}
+
+.about-right h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-right h3 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-right p {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Profile photo circle */
+.profile-photo {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.profile-photo img {
+  width: 500px;
+  height: 500px;
+  border-radius: 70%;
+  object-fit: cover;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+/* Project Page*/
+
+
+.project-card {
+  float: left; /* align cards side by side */
+  width: 22%;  /* 4 cards in a row */
+  height: 500px;
+  margin: 1%;  /* spacing between cards */
+  margin-top: 5%;
+  background: #111; /* black cards */
+  color: white;
+  padding: 20px;
+  text-align: left;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+
+/* Project heading */
+.project-card h2 {
+  color: #f5c400; /* yellow heading text */
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Card text */
+.project-card p {
+  font-size: 14px;
+  color: white;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* Contact CSS */
+
+/* This is the Linear Gradient For The Contact Page, This is overriding the colour scheme from the other 3 pages so if I remove this 
+the color scheme would be the same as the other 3 pages. */
+.contact-section {
+  background: linear-gradient(to right, #fbd342, #f78d2f); /* yellow → orange */
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+.contact-section h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+/* Contact form container */
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Labels */
+.contact-form label {
+  font-size: 16px;
+  font-weight: normal;
+  color: #111;
+}
+
+/* Inputs + textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Bigger message box */
+.contact-form textarea {
+  min-height: 120px;
+  border-radius: 20px;
+  resize: vertical;
+}
+
+/* Submit button */
+.submit-btn {
+  background: #000;
+  color: #f5c400;
+  font-weight: bold;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  align-self: flex-end; /* right align */
+  
+}
+
+.submit-btn:hover {
+  background: #222;
+}
+/* Contact CSS */
+
+/* Contact section background */
+.contact-section {
+  background: linear-gradient(to right, #fbd342, #f78d2f); /* yellow → orange */
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+.contact-section h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+/* Contact form container */
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Labels */
+.contact-form label {
+  display: block;          /* force label on its own line */
+  margin-bottom: 6px;      /* small space before input */
+  font-size: 16px;
+  font-weight: normal;
+  color: #111;
+}
+
+/* textarea */
+.contact-form input,
+.contact-form textarea {
+  display: block;          /* each input takes full width */
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  margin-bottom: 18px;     /* space between fields */
+  box-sizing: border-box;
+}
+
+/* Bigger message box */
+.contact-form textarea {
+  min-height: 120px;
+  border-radius: 20px;
+  resize: vertical;
+}
+
+/* Submit button */
+.submit-btn {
+  background: #000;
+  color: #f5c400;
+  font-weight: bold;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  float: right;            /* replaces align-self: flex-end */
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #222;
+}
